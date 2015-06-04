@@ -1,3 +1,5 @@
 language: generic
 script:
-- bash -e ./kadai2.sh 12 20
+ - bash -e ./kadai2.sh 12 20
+ - bash -e ./kadai2.sh 15 20
+ - bash -e ./kadai2.sh 20
