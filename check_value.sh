@@ -3,7 +3,7 @@
 
 while read i
 do
-	for j in `fgrep "$1 $2" check_master.txt | awk -e '{print $3}'`
+	for j in `fgrep "$1 $2" check_master.txt | awk '{print $3}'`
 	do
 		echo -n $i
 		if [ $i -eq $j ]
