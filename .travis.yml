@@ -1,8 +1,12 @@
 language: generic
 script:
- - bash -x ./kadai2.sh
- - bash -x ./kadai2.sh 20
- - bash -x ./kadai2.sh 12 20
- - bash -x ./kadai2.sh 15 20
- - bash -x ./kadai2.sh 12 15
- - bash -x ./kadai2.sh 12 20 DEBUG
+ - bash ./kadai2.sh
+ - bash ./kadai2.sh 20
+ - bash ./kadai2.sh 12 15
+ - bash ./kadai2.sh 12 15 | bash ./check_value.sh 12 15
+ - bash ./kadai2.sh 12 20
+ - bash ./kadai2.sh 12 20 | bash ./check_value.sh 12 20
+ - bash ./kadai2.sh 15 20
+ - bash ./kadai2.sh 15 20 | bash ./check_value.sh 15 20
+ - bash ./kadai2.sh 12 20 DEBUG
+
